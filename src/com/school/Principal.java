@@ -13,7 +13,7 @@ public class Principal {
 		SessionFactory sf=cfg.buildSessionFactory();
 		Session session=sf.openSession();
 		Transaction tr=session.beginTransaction();
-		
+		System.out.println("added new things");
 		Teacher teach=new Teacher();
 		
 		teach.setTid(1);
